@@ -1,0 +1,94 @@
+table.my-table-design{
+	margin:10 auto;
+	border-collapse: collapse;
+	border: solid 1px #ccc;
+	font-size: 14px;
+	width:100%;
+	background:#fff;
+}
+@media screen and (max-width:400px) {
+	table.my-table-design{
+		font-size: 12px;
+	}
+}
+table.my-table-design th,
+table.my-table-design td {
+	border: solid 1px #ccc;
+	padding: 4px 6px;
+	overflow:hidden;
+	text-align:left;
+	background:#fff;
+}
+
+table.my-table-design th {
+	background: -moz-linear-gradient(top, #0B4C5F, #0A2229);
+	background: -webkit-gradient(linear, left top, left bottom, from(#0B4C5F), to(#0A2229));
+	white-space: nowrap;
+	color: #fff;
+	text-shadow: 0 0 2px rgba(0,0,0,3);
+}
+
+
+table.my-table-design tr:nth-child(1n){
+	color:#61210B
+}
+
+table.my-table-design tr:nth-child(2n){
+	color:#21610B;
+}
+
+.my-table-design p{
+	margin:0;
+	padding:0;
+}
+.my-table-design td.contentsAllInRow{
+	padding:0;
+}
+.my-table-design td.contentsAllInRow div{
+	padding:5px;
+}
+.my-table-design div.nameHeadLine{
+	background: -moz-linear-gradient(top, #aaa, #ccc);
+	background: -webkit-gradient(linear, left top, left bottom, from(#aaa), to(#ccc));
+}
+.my-table-design div.current_target_col,
+.my-table-design td.current_target_col{
+	background:#EFFBF2;
+}
+.my-table-design p.point{
+	color: #fff;
+	text-shadow: 0 0 2px rgba(0,0,0,3);
+	font-weight:bold;
+	background:#ccc;
+	display:block;
+	width:13px;
+	padding:1px 0 0 2px;
+	height:14px;
+	font-size:14px;
+	text-align:center;
+    border-radius:10px;/* CSS3草案 */
+    -webkit-border-radius:10px;/* Safari,Google Chrome用 */
+    -moz-border-radius:10px;/* Firefox用 */
+    float:right;
+    margin-right:-3px;
+    position:relative;
+}
+.my-table-design p.point span{
+	height: 0;
+	width: 0;
+	border: 4px solid transparent;
+	border-top-color: #fff;
+	position:absolute;
+	top:3px;
+	left:6px;
+    -webkit-transform:rotate(-90deg);/* chrome、safari　*/
+	-moz-transform:rotate(-90deg);/* firefox　*/
+}
+.my-table-design td.contentsAllInRow p.point{
+	float:right;
+	opacity:1;
+}
+.my-table-design p.close{
+    -webkit-transform:rotate(90deg);/* chrome、safari　*/
+	-moz-transform:rotate(90deg);/* firefox　*/
+}
